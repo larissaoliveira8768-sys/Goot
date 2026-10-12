@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b0afq54nwe6bf"]
+
+[ext_resource type="Texture2D" uid="uid://bjom063ns2agq" path="res://OIP__18_-removebg-preview.png" id="1_avoeb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_es2mj"]
+radius = 19.0
+height = 60.0
+
+[node name="Lazer" type="Area2D" unique_id=1063952162]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1679968592]
+position = Vector2(0.7499995, -24.14801)
+scale = Vector2(1.5189394, 0.24717088)
+texture = ExtResource("1_avoeb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1714251677]
+top_level = true
+light_mask = 8
+visibility_layer = 15
+position = Vector2(0, -21)
+shape = SubResource("CapsuleShape2D_es2mj")
